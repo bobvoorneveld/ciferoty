@@ -14,9 +14,4 @@ describe('App: Ciferoty', () => {
       inject([CiferotyAppComponent], (app: CiferotyAppComponent) => {
     expect(app).toBeTruthy();
   }));
-
-  it('should have as title \'ciferoty works!\'',
-      inject([CiferotyAppComponent], (app: CiferotyAppComponent) => {
-    expect(app.title).toEqual('ciferoty works!');
-  }));
 });

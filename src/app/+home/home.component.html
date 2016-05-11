@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="starter-template">
+    <h1>Cijfers berekenen was nog nooit zo makkelijk</h1>
+    <p class="lead">Vul hieronder het totaal aantal punten in dat behaald kan worden op een toets en zie wat je leerlingen gescoord hebben.</p>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <form class="form-inline smart-form">
+        <div class="form-group">
+          <label for="totalPoints">Maximale punten</label>
+          <input type="number" class="form-control" id="totalPoints" [(ngModel)]="totalPoints">
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" id="percentage" [(ngModel)]="percentage">
+          <label for="percentage">% goed voor een 6</label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <app-scoring-table [totalPoints]="totalPoints" [percentage]="percentage"></app-scoring-table>
+    </div>
+  </div>
+</div>

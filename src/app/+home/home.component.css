@@ -1,0 +1,28 @@
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.smart-form {
+  text-align: center;
+}
+
+.top-buffer {
+  margin-top: 20px;
+}
+
+table {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}
+
+.red {
+  background-color: #8a4182;
+}
+
+.blue {
+  background-color: #008a7d;
+}

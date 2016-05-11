@@ -1,0 +1,14 @@
+<table class="table top-buffer">
+  <thead>
+  <tr>
+    <th>Points</th>
+    <th>Grade</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let row of rows" [style.background-color]="colorForGrade(row.grade)">
+    <td>{{row.points}}</td>
+    <td>{{row.grade | number: '.1-1'}}</td>
+  </tr>
+  </tbody>
+</table>
